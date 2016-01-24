@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pomodoro Clock</title>
+	<meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="Content/bootstrap-theme.min.css" rel="stylesheet" />
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link href='https://fonts.googleapis.com/css?family=Shadows+Into+Light' rel='stylesheet' type='text/css'>
+    <link href="StyleSheet.css" rel="stylesheet" />
+</head>
+<body>
+    <section>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h1 class="text-primary"><strong>My Pomodoro Clock</strong></h1>
+                </div>
+                <br />
+                <div class="col-lg-6 text-primary text-center">
+                    <h3>Break Length</h3>
+                    <div>
+                        <button class="btn btn-link btn-sm btn-default" id="minus">-</button>
+                        <button type="button" class="btn btn-link btn-lg" id="breaktime">5</button>
+                        <button class="btn btn-link btn-sm btn-default" id="plus">+</button>
+                    </div>
+                </div>
+                <div class="col-lg-6 text-primary text-center">
+                    <h3>Session Length</h3>
+                    <div>
+                        <button class="btn btn-link btn-sm btn-default" id="minus2">-</button>
+                        <button type="button" class="btn btn-link btn-lg" id="worktime">25</button>
+                        <button class="btn btn-link btn-sm btn-default" id="plus2">+</button>
+                    </div>
+                </div>
+            </div>
+            <div class="row text-primary top-row text-center">
+                <h2 id="status">Work!</h2>
+                <!--                 <canvas id="progress"></canvas> -->
+                <div>
+                    <h1 id="timer">25:00</h1>
+                </div>
+                <br />
+                <div class="row top-row text-primary bottom">
+                    <button type="button" id="start" onclick="startCount()">Start</button>
+                    <button type="button" id="pause" onclick="pauseCount()">Pause</button>
+                    <button type="button" id="reset" onclick="resetCount()">Reset</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="Scripts/bootstrap.min.js"></script>
+    <script src="Scripts/jquery-2.2.0.min.js"></script>
+    <script src="JavaScript.js"></script>
+</body>
+</html>
